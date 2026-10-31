@@ -29,6 +29,9 @@ jobs:
         with:
           gradle-version: '8.9'
 
+      - name: Generate Gradle Wrapper
+        run: gradle wrapper
+
       - name: Download fonts into the app (optional, never fails)
         run: bash tools/fetch-fonts.sh
 
